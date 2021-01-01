@@ -10,6 +10,7 @@ const forecast = require('./utils/forecast')
 // console.log(path.join(__dirname,'../public'))
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define path for express config
 const publicDirectory = path.join(__dirname, '../public')
@@ -78,6 +79,6 @@ app.get('/help/*', (req, res) => {
         errorMessage: 'Article not found'
     })
 })
-app.listen(3000, () => {
-    console.log('Server is ready')
+app.listen(port, () => {
+    console.log('Server is ready on port ' + port)
 })
