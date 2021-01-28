@@ -15,7 +15,7 @@ body{
     flex-grow: 1;
 }
 .main-content p,form{
-    padding: 16px;
+    padding: 16px 0px 16px 16px;
     color: #333333;
 }
 footer{
@@ -39,6 +39,7 @@ header h1{
 img{
     width: 250px; 
     height: 250px;
+    border-radius: 50%;
 }
 input{
     padding: 8px;
@@ -52,4 +53,7 @@ button{
     background-color: #888888;
     color: white;
     outline: none;
+}
+form{
+    display: inline-block;
 }
